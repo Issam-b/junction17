@@ -41,5 +41,5 @@ ehthumbs.db
 Thumbs.db
 
 # Folder to exclude
-*/[Aa]ssets/Models/
+#*/[Aa]ssets/Models/
 */App/

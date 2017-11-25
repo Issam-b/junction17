@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: d3c914440334ff54a9404c75d0d64fbb
+timeCreated: 1511595591
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: volume as stl LOW_MeshPart0
+    100002: volume as stl LOW_MeshPart1
+    100004: volume as stl LOW_MeshPart10
+    100006: volume as stl LOW_MeshPart11
+    100008: volume as stl LOW_MeshPart12
+    100010: volume as stl LOW_MeshPart13
+    100012: volume as stl LOW_MeshPart14
+    100014: volume as stl LOW_MeshPart15
+    100016: volume as stl LOW_MeshPart16
+    100018: volume as stl LOW_MeshPart17
+    100020: volume as stl LOW_MeshPart18
+    100022: volume as stl LOW_MeshPart19
+    100024: volume as stl LOW_MeshPart2
+    100026: volume as stl LOW_MeshPart20
+    100028: volume as stl LOW_MeshPart21
+    100030: volume as stl LOW_MeshPart22
+    100032: volume as stl LOW_MeshPart23
+    100034: volume as stl LOW_MeshPart24
+    100036: volume as stl LOW_MeshPart25
+    100038: volume as stl LOW_MeshPart26
+    100040: volume as stl LOW_MeshPart27
+    100042: volume as stl LOW_MeshPart3
+    100044: volume as stl LOW_MeshPart4
+    100046: volume as stl LOW_MeshPart5
+    100048: volume as stl LOW_MeshPart6
+    100050: volume as stl LOW_MeshPart7
+    100052: volume as stl LOW_MeshPart8
+    100054: volume as stl LOW_MeshPart9
+    100056: //RootNode
+    400000: volume as stl LOW_MeshPart0
+    400002: volume as stl LOW_MeshPart1
+    400004: volume as stl LOW_MeshPart10
+    400006: volume as stl LOW_MeshPart11
+    400008: volume as stl LOW_MeshPart12
+    400010: volume as stl LOW_MeshPart13
+    400012: volume as stl LOW_MeshPart14
+    400014: volume as stl LOW_MeshPart15
+    400016: volume as stl LOW_MeshPart16
+    400018: volume as stl LOW_MeshPart17
+    400020: volume as stl LOW_MeshPart18
+    400022: volume as stl LOW_MeshPart19
+    400024: volume as stl LOW_MeshPart2
+    400026: volume as stl LOW_MeshPart20
+    400028: volume as stl LOW_MeshPart21
+    400030: volume as stl LOW_MeshPart22
+    400032: volume as stl LOW_MeshPart23
+    400034: volume as stl LOW_MeshPart24
+    400036: volume as stl LOW_MeshPart25
+    400038: volume as stl LOW_MeshPart26
+    400040: volume as stl LOW_MeshPart27
+    400042: volume as stl LOW_MeshPart3
+    400044: volume as stl LOW_MeshPart4
+    400046: volume as stl LOW_MeshPart5
+    400048: volume as stl LOW_MeshPart6
+    400050: volume as stl LOW_MeshPart7
+    400052: volume as stl LOW_MeshPart8
+    400054: volume as stl LOW_MeshPart9
+    400056: //RootNode
+    2300000: volume as stl LOW_MeshPart0
+    2300002: volume as stl LOW_MeshPart1
+    2300004: volume as stl LOW_MeshPart10
+    2300006: volume as stl LOW_MeshPart11
+    2300008: volume as stl LOW_MeshPart12
+    2300010: volume as stl LOW_MeshPart13
+    2300012: volume as stl LOW_MeshPart14
+    2300014: volume as stl LOW_MeshPart15
+    2300016: volume as stl LOW_MeshPart16
+    2300018: volume as stl LOW_MeshPart17
+    2300020: volume as stl LOW_MeshPart18
+    2300022: volume as stl LOW_MeshPart19
+    2300024: volume as stl LOW_MeshPart2
+    2300026: volume as stl LOW_MeshPart20
+    2300028: volume as stl LOW_MeshPart21
+    2300030: volume as stl LOW_MeshPart22
+    2300032: volume as stl LOW_MeshPart23
+    2300034: volume as stl LOW_MeshPart24
+    2300036: volume as stl LOW_MeshPart25
+    2300038: volume as stl LOW_MeshPart26
+    2300040: volume as stl LOW_MeshPart27
+    2300042: volume as stl LOW_MeshPart3
+    2300044: volume as stl LOW_MeshPart4
+    2300046: volume as stl LOW_MeshPart5
+    2300048: volume as stl LOW_MeshPart6
+    2300050: volume as stl LOW_MeshPart7
+    2300052: volume as stl LOW_MeshPart8
+    2300054: volume as stl LOW_MeshPart9
+    3300000: volume as stl LOW_MeshPart0
+    3300002: volume as stl LOW_MeshPart1
+    3300004: volume as stl LOW_MeshPart10
+    3300006: volume as stl LOW_MeshPart11
+    3300008: volume as stl LOW_MeshPart12
+    3300010: volume as stl LOW_MeshPart13
+    3300012: volume as stl LOW_MeshPart14
+    3300014: volume as stl LOW_MeshPart15
+    3300016: volume as stl LOW_MeshPart16
+    3300018: volume as stl LOW_MeshPart17
+    3300020: volume as stl LOW_MeshPart18
+    3300022: volume as stl LOW_MeshPart19
+    3300024: volume as stl LOW_MeshPart2
+    3300026: volume as stl LOW_MeshPart20
+    3300028: volume as stl LOW_MeshPart21
+    3300030: volume as stl LOW_MeshPart22
+    3300032: volume as stl LOW_MeshPart23
+    3300034: volume as stl LOW_MeshPart24
+    3300036: volume as stl LOW_MeshPart25
+    3300038: volume as stl LOW_MeshPart26
+    3300040: volume as stl LOW_MeshPart27
+    3300042: volume as stl LOW_MeshPart3
+    3300044: volume as stl LOW_MeshPart4
+    3300046: volume as stl LOW_MeshPart5
+    3300048: volume as stl LOW_MeshPart6
+    3300050: volume as stl LOW_MeshPart7
+    3300052: volume as stl LOW_MeshPart8
+    3300054: volume as stl LOW_MeshPart9
+    4300000: volume as stl LOW_MeshPart0
+    4300002: volume as stl LOW_MeshPart1
+    4300004: volume as stl LOW_MeshPart2
+    4300006: volume as stl LOW_MeshPart3
+    4300008: volume as stl LOW_MeshPart4
+    4300010: volume as stl LOW_MeshPart5
+    4300012: volume as stl LOW_MeshPart6
+    4300014: volume as stl LOW_MeshPart7
+    4300016: volume as stl LOW_MeshPart8
+    4300018: volume as stl LOW_MeshPart9
+    4300020: volume as stl LOW_MeshPart10
+    4300022: volume as stl LOW_MeshPart11
+    4300024: volume as stl LOW_MeshPart12
+    4300026: volume as stl LOW_MeshPart13
+    4300028: volume as stl LOW_MeshPart14
+    4300030: volume as stl LOW_MeshPart15
+    4300032: volume as stl LOW_MeshPart16
+    4300034: volume as stl LOW_MeshPart17
+    4300036: volume as stl LOW_MeshPart18
+    4300038: volume as stl LOW_MeshPart19
+    4300040: volume as stl LOW_MeshPart20
+    4300042: volume as stl LOW_MeshPart21
+    4300044: volume as stl LOW_MeshPart22
+    4300046: volume as stl LOW_MeshPart23
+    4300048: volume as stl LOW_MeshPart24
+    4300050: volume as stl LOW_MeshPart25
+    4300052: volume as stl LOW_MeshPart26
+    4300054: volume as stl LOW_MeshPart27
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8752d3f647b16024db3cb371683d8198, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
