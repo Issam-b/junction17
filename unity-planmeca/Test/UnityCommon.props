@@ -1,9 +1,0 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <UnityWSASolutionName>unity-planmeca</UnityWSASolutionName>
-        <UnityWSASolutionDir>D:\junction17\unity-planmeca\Test\</UnityWSASolutionDir>
-        <UnityProjectDir>D:\junction17\unity-planmeca\</UnityProjectDir>
-        <UnityWSAPlayerDir>D:\Unity 2017 final\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
-        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
-    </PropertyGroup>
-</Project>

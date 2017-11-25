@@ -43,3 +43,6 @@ Thumbs.db
 # Folder to exclude
 #*/[Aa]ssets/Models/
 */App/
+*/Test/
+Teeth/
+unity-planmeca/Teeth/
