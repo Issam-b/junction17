@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScenesManager : MonoBehaviour {
+public class ScenesManager : MonoBehaviour
+{
 
-	
-   // enum State curentState ={ idle, drill};
 
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    enum State { main, drill };
+
+
+    void Start()
+    {
+
+        State curentState = State.main;
+
+    }
+
+
 }
