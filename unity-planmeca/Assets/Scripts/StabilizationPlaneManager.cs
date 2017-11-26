@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#if UNITY_2017_2
+using UnityEngine.XR.WSA;
+#else 
+using UnityEngine.VR.WSA;
+
+#endif
+
 public class StabilizationPlaneManager : MonoBehaviour {
 
     //public GameObject focusedObject;
