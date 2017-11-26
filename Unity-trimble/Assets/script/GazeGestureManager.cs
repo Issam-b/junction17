@@ -9,6 +9,7 @@ public class GazeGestureManager : MonoBehaviour
     public GameObject FocusedObject { get; private set; }
 
     GestureRecognizer recognizer;
+    public GameObject floor1, floor2;
 
     // Use this for initialization
     void Start()
@@ -23,11 +24,11 @@ public class GazeGestureManager : MonoBehaviour
             {                 // Send an OnSelect message to the focused object and its ancestors.
                 if (AnimationController.activeFloor == 0)
                 {
-                    if (FocusedObject == GameObject.FindGameObjectWithTag("Floor1").GetComponent<GameObject>())
+                    if (FocusedObject == floor1)
                     {
                         FocusedObject.SendMessageUpwards("OnSelect1", SendMessageOptions.DontRequireReceiver);
                     }
-                    else if (FocusedObject == GameObject.FindGameObjectWithTag("Floor2").GetComponent<GameObject>())
+                    else if (FocusedObject == floor2)
                     {
                         FocusedObject.SendMessageUpwards("OnSelect2", SendMessageOptions.DontRequireReceiver);
                     }

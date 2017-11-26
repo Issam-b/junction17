@@ -73,18 +73,18 @@ public class SpeechManager : MonoBehaviour
             floor1.transform.DOScale(new Vector3(20, 20, 20), 2);
         });
 
-        _keywords.Add("Turn Right", () =>
-        {
-            activeFloor = 0;
-            AnimationController.activeFloor = 0;
-            floor1.SetActive(true);
-            floor2.SetActive(true);
-            floor1.transform.position = F1Initial;
-            floor2.transform.position = F2Initial;
-            floor1.transform.DOScale(new Vector3(1, 1, 1), 1);
-            floor2.transform.DOScale(new Vector3(1, 1, 1), 1);
-            floor2.transform.DOMove(new Vector3(1.5f, F2Initial.y, 1.5f), 2);
-        });
+        //_keywords.Add("Turn Right", () =>
+        //{
+        //    activeFloor = 0;
+        //    AnimationController.activeFloor = 0;
+        //    floor1.SetActive(true);
+        //    floor2.SetActive(true);
+        //    floor1.transform.position = F1Initial;
+        //    floor2.transform.position = F2Initial;
+        //    floor1.transform.DOScale(new Vector3(1, 1, 1), 1);
+        //    floor2.transform.DOScale(new Vector3(1, 1, 1), 1);
+        //    floor2.transform.DOMove(new Vector3(1.5f, F2Initial.y, 1.5f), 2);
+        //});
 
         _keywords.Add("Turn Left", () =>
         {
