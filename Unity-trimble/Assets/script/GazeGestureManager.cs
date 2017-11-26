@@ -31,7 +31,8 @@ public class GazeGestureManager : MonoBehaviour
                     FocusedObject.SendMessageUpwards("OnSelect2", SendMessageOptions.DontRequireReceiver);
                 }
             }
-            else if (AnimationController.activeFloor == 1 || AnimationController.activeFloor == 2)
+            else 
+            //if (AnimationController.activeFloor == 1 || AnimationController.activeFloor == 2)
             {
                 if (FocusedObject != null)
                     FocusedObject.SendMessageUpwards("OnSelectReset", SendMessageOptions.DontRequireReceiver);
