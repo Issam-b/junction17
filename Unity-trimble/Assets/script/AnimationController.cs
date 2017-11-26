@@ -28,7 +28,7 @@ public class AnimationController : MonoBehaviour
         {
 
             ShiftRight();
-        }
+        } 
 
         else if (Input.GetKeyDown(KeyCode.S))
         {
