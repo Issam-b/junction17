@@ -29,22 +29,22 @@ public class SpeechManager : MonoBehaviour
         F1Initial = floor1.transform.position;
         F2Initial = transform.position;
 
-        _keywords.Add("Zoom In 2", () =>
+        _keywords.Add("Zoom In Two", () =>
         {
             animController.ZoomFloor2();
         });
 
-        _keywords.Add("Zoom In 1", () =>
+        _keywords.Add("Zoom In One", () =>
         {
             animController.ZoomFloor1();
         });
 
-        _keywords.Add("Turn right", () =>
+        _keywords.Add("Turn Right", () =>
         {
             animController.ShiftRight();
         });
 
-        _keywords.Add("Turn right", () =>
+        _keywords.Add("Turn Left", () =>
         {
             animController.ShiftLeft();
         });
