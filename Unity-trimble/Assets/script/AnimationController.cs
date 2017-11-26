@@ -21,21 +21,13 @@ public class AnimationController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            floor1.SetActive(true);
-            floor1.transform.position = F1Initial;
-            transform.position = F2Initial;
-            transform.DOScale(new Vector3(1, 1, 1), 1);
-            transform.DOMove(new Vector3(0, 0, 1.5f), 2);
-            
+
+            ShiftLeft();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            floor1.SetActive(true);
-            floor1.transform.position = F1Initial;
-            transform.position = F2Initial;
-            transform.DOScale(new Vector3(1, 1, 1), 1);
-            transform.DOMove(new Vector3(1.5f, 0, 1.5f), 2);
 
+            ShiftRight();
         }
 
         else if (Input.GetKeyDown(KeyCode.S))
@@ -49,6 +41,24 @@ public class AnimationController : MonoBehaviour
     public void OnSelect()
     {
         ZoomFloor2();
+    }
+
+    public void ShiftRight()
+    {
+        floor1.SetActive(true);
+        floor1.transform.position = F1Initial;
+        transform.position = F2Initial;
+        transform.DOScale(new Vector3(1, 1, 1), 1);
+        transform.DOMove(new Vector3(1.5f, 0, 1.5f), 2);
+    }
+
+    public void ShiftLeft()
+    {
+        floor1.SetActive(true);
+        floor1.transform.position = F1Initial;
+        transform.position = F2Initial;
+        transform.DOScale(new Vector3(1, 1, 1), 1);
+        transform.DOMove(new Vector3(0, 0, 1.5f), 2);
     }
 
     public void ZoomFloor2()
