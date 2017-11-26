@@ -20,23 +20,24 @@ public class GazeGestureManager : MonoBehaviour
         recognizer.Tapped += (args) =>
         {
             // Send an OnSelect message to the focused object and its ancestors.
-            if (AnimationController.activeFloor == 0)
-            {
-                if (FocusedObject == GameObject.FindGameObjectWithTag("Floor1").GetComponent<GameObject>())
-                {
-                    FocusedObject.SendMessageUpwards("OnSelect1", SendMessageOptions.DontRequireReceiver);
-                }
-                else if (FocusedObject == GameObject.FindGameObjectWithTag("Floor2").GetComponent<GameObject>())
-                {
-                    FocusedObject.SendMessageUpwards("OnSelect2", SendMessageOptions.DontRequireReceiver);
-                }
-            }
-            else 
-            //if (AnimationController.activeFloor == 1 || AnimationController.activeFloor == 2)
-            {
+            //if (AnimationController.activeFloor == 0)
+            //{
+            //    if (FocusedObject == GameObject.FindGameObjectWithTag("Floor1").GetComponent<GameObject>())
+            //    {
+            //        FocusedObject.SendMessageUpwards("OnSelect1", SendMessageOptions.DontRequireReceiver);
+            //    }
+            //    else if (FocusedObject == GameObject.FindGameObjectWithTag("Floor2").GetComponent<GameObject>())
+            //    {
+            //        FocusedObject.SendMessageUpwards("OnSelect2", SendMessageOptions.DontRequireReceiver);
+            //    }
+            //}
+            //else 
+            ////if (AnimationController.activeFloor == 1 || AnimationController.activeFloor == 2)
+            //{
                 if (FocusedObject != null)
-                    FocusedObject.SendMessageUpwards("OnSelectReset", SendMessageOptions.DontRequireReceiver);
-            }
+                FocusedObject.SendMessageUpwards("OnSelect1", SendMessageOptions.DontRequireReceiver);
+            //FocusedObject.SendMessageUpwards("OnSelectReset", SendMessageOptions.DontRequireReceiver);
+            //
         };
         recognizer.StartCapturingGestures();
     }
