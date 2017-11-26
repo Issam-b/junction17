@@ -21,6 +21,6 @@ public class StabilizationPlaneManager : MonoBehaviour {
         var position = Camera.main.transform.position;
         position.z += 1.5f;
 
-        UnityEngine.VR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
+        //UnityEngine.VR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
     }
 }
