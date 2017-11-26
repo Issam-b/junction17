@@ -11,7 +11,7 @@ public class DataManager : MonoBehaviour {
 	// Use this for initialization
 	bool up = true; 
 	void Start () {
-		PainImg.transform.localScale = new Vector2 (0, 1);
+		///PainImg.transform.localScale = new Vector2 (0, 1);
 		//StressImg.transform.localScale = new Vector2 (0, 1);
 
 	}
@@ -29,7 +29,7 @@ public class DataManager : MonoBehaviour {
 		
 		}
 
-		if (Input.GetKeyDown(KeyCode.KeypadPlus)) {
+		/*if (Input.GetKeyDown(KeyCode.KeypadPlus)) {
 			PainCurrent +=  5;
 			StressCurrent +=  3;
 		}
@@ -37,7 +37,7 @@ public class DataManager : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.KeypadMinus)) {
 			PainCurrent -= PainCurrent + 2;
 			StressCurrent -= PainCurrent - 3;
-		}
+		}*/
 		PainCurrent = Mathf.Clamp (PainCurrent, 0, 100);
 		StressCurrent = Mathf.Clamp (StressCurrent, 0, 100);
 
@@ -46,9 +46,9 @@ public class DataManager : MonoBehaviour {
 
 		FaceCheck (PainPerecent * 100);
 
-		PainImg.transform.localScale = new Vector2 (PainPerecent, 1);
+		PainImg.transform.localScale = new Vector3 (PainPerecent, 1,1);
 
-		PainImg.color = new Color(2.0f * PainPerecent, 2.0f * (1 - PainPerecent), 0);
+		PainImg.color = new Color(2.0f * PainPerecent, 2.0f * (1 - PainPerecent), 0,1);
 
 		PaintTxt.color = new Color(2.0f * PainPerecent, 2.0f * (1 - PainPerecent), 0);
 
