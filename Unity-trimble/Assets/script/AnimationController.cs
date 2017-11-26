@@ -33,11 +33,21 @@ public class AnimationController : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.S))
         {
+            ZoomFloor1();
+        }
+
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
             ZoomFloor2();
         }
-    //x 0.041894 y -0.568 z 0.75762  s 25
 
-}
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            ShiftRight();
+        }
+        //x 0.041894 y -0.568 z 0.75762  s 25
+
+    }
 
     public void OnSelect1()
     {
@@ -58,29 +68,33 @@ public class AnimationController : MonoBehaviour
     {
         activeFloor = 0;
         floor1.SetActive(true);
+        floor2.SetActive(true);
         floor1.transform.position = F1Initial;
         floor2.transform.position = F2Initial;
+        floor1.transform.DOScale(new Vector3(1, 1, 1), 1);
         floor2.transform.DOScale(new Vector3(1, 1, 1), 1);
-        floor2.transform.DOMove(new Vector3(1.5f, 0, 1.5f), 2);
+        floor2.transform.DOMove(new Vector3(1.5f, F2Initial.y, 1.5f), 2);
     }
 
     public void ShiftLeft()
     {
         activeFloor = 0;
         floor1.SetActive(true);
+        floor2.SetActive(true);
         floor1.transform.position = F1Initial;
         floor2.transform.position = F2Initial;
+        floor1.transform.DOScale(new Vector3(1, 1, 1), 1);
         floor2.transform.DOScale(new Vector3(1, 1, 1), 1);
-        floor2.transform.DOMove(new Vector3(0, 0, 1.5f), 2);
+        floor2.transform.DOMove(new Vector3(F2Initial.x, F2Initial.y, 1.5f), 2);
     }
 
     public void ZoomFloor1()
     {
         activeFloor = 1;
-        floor1.SetActive(false);
+        floor1.SetActive(true);
         floor2.SetActive(false);
-        floor2.transform.DOMove(new Vector3(6f, -2f, 1.5f), 2);
-        floor2.transform.DOScale(new Vector3(20, 20, 20), 2);
+        floor1.transform.DOMove(new Vector3(3.35f, -1.93f, 0.5f), 2);
+        floor1.transform.DOScale(new Vector3(20, 20, 20), 2);
 
     }
 

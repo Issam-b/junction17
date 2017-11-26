@@ -23,14 +23,6 @@ public class SpeechManager : MonoBehaviour
 
     AnimationController animController = new AnimationController();
 
-
-
-    public void ShowFurn()
-    {
-
-    }
-		
-
     void Start()
     {
 
