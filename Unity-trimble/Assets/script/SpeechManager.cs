@@ -10,7 +10,7 @@ using DG.Tweening;
 
 public class SpeechManager : MonoBehaviour
 {
-    public GameObject floor1;
+    public GameObject floor1, floor2;
     Vector3 F1Initial, F2Initial;
 
     KeywordRecognizer _keywordRecognizer = null;
@@ -20,6 +20,8 @@ public class SpeechManager : MonoBehaviour
     private string _lastCommand = null;
     private float _lastNumber = 0;
     //private AudioClip _audioClip;
+
+    AnimationController animController = new AnimationController();
 
 
 
@@ -35,19 +37,29 @@ public class SpeechManager : MonoBehaviour
         F1Initial = floor1.transform.position;
         F2Initial = transform.position;
 
-        _keywords.Add("Zoom In", () =>
+        _keywords.Add("Zoom In 2", () =>
         {
-            ZoomFloor2();
+            animController.ZoomFloor2();
         });
 
-		_keywords.Add("Turn right", () =>
+        _keywords.Add("Zoom In 1", () =>
         {
-            ShiftRight();
+            animController.ZoomFloor1();
         });
 
         _keywords.Add("Turn right", () =>
         {
-            ShiftLeft();
+            animController.ShiftRight();
+        });
+
+        _keywords.Add("Turn right", () =>
+        {
+            animController.ShiftLeft();
+        });
+
+        _keywords.Add("Reset", () =>
+        {
+            animController.ShiftRight();
         });
 
 
@@ -66,32 +78,6 @@ public class SpeechManager : MonoBehaviour
         {
             keywordAction.Invoke();
         }
-    }
-
-    public void ShiftRight()
-    {
-        floor1.SetActive(true);
-        floor1.transform.position = F1Initial;
-        transform.position = F2Initial;
-        transform.DOScale(new Vector3(1, 1, 1), 1);
-        transform.DOMove(new Vector3(1.5f, 0, 1.5f), 2);
-    }
-
-    public void ShiftLeft()
-    {
-        floor1.SetActive(true);
-        floor1.transform.position = F1Initial;
-        transform.position = F2Initial;
-        transform.DOScale(new Vector3(1, 1, 1), 1);
-        transform.DOMove(new Vector3(0, 0, 1.5f), 2);
-    }
-
-    public void ZoomFloor2()
-    {
-        floor1.SetActive(false);
-        transform.DOMove(new Vector3(6f, -2f, 1.5f), 2);
-        transform.DOScale(new Vector3(25, 25, 25), 2);
-
     }
 
 }
