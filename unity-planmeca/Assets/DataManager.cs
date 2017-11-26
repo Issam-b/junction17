@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class DataManager : MonoBehaviour {
 	public Image PainImg, StressImg;
 	public float PainMax = 100, PainCurrent, StressMax = 100, StressCurrent, PainPerecent, StressPerecent;

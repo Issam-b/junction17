@@ -5,16 +5,24 @@ using UnityEngine;
 public class ScenesManager : MonoBehaviour
 {
 
+    public bool switch_to_drill = false;
+    public bool switch_to_main = false;
 
-    enum State { main, drill };
 
 
-    void Start()
+    private void Update()
     {
+         if (switch_to_drill)
+        {
+            Application.LoadLevel(1);
+            //ScenesManager.LoadScene(1);
+        }
 
-        State curentState = State.main;
+        else if (switch_to_main)
+        {
+            Application.LoadLevel(0);
+        }
 
     }
-
 
 }
