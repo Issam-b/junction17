@@ -22,23 +22,23 @@ public class GazeGestureManager : MonoBehaviour
         {
             if (FocusedObject != null)
             {                 // Send an OnSelect message to the focused object and its ancestors.
-                if (AnimationController.activeFloor == 0)
-                {
-                    if (FocusedObject == floor1)
-                    {
+                //if (AnimationController.activeFloor == 0)
+                //{
+                    //if (FocusedObject == floor1)
+                    //{
                         FocusedObject.SendMessageUpwards("OnSelect1", SendMessageOptions.DontRequireReceiver);
-                    }
-                    else if (FocusedObject == floor2)
-                    {
-                        FocusedObject.SendMessageUpwards("OnSelect2", SendMessageOptions.DontRequireReceiver);
-                    }
-                }
-                else
-                    //if (AnimationController.activeFloor == 1 || AnimationController.activeFloor == 2)
-                {
+                    //}
+                //        else if (FocusedObject == floor2)
+                //        {
+                //            FocusedObject.SendMessageUpwards("OnSelect2", SendMessageOptions.DontRequireReceiver);
+                //        }
+                //    }
+                //    else
+                //        //if (AnimationController.activeFloor == 1 || AnimationController.activeFloor == 2)
+                //    {
 
-                    FocusedObject.SendMessageUpwards("OnSelectReset", SendMessageOptions.DontRequireReceiver);
-                }
+                //        FocusedObject.SendMessageUpwards("OnSelectReset", SendMessageOptions.DontRequireReceiver);
+                //    }
             }
         };
         recognizer.StartCapturingGestures();

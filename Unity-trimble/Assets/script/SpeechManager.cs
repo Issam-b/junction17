@@ -25,35 +25,13 @@ public class SpeechManager : MonoBehaviour
     AnimationController animController = new AnimationController();
 
 
-    public void ShiftRight()
-    {
-        
-    }
-
-    public void ShiftLeft()
-    {
-        
-    }
-
-    public void ZoomFloor1()
-    {
-        
-
-    }
-
-    public void ZoomFloor2()
-    {
-        
-
-    }
-
     void Start()
     {
 
         F1Initial = floor1.transform.position;
         F2Initial = transform.position;
 
-        _keywords.Add("Zoom In Two", () =>
+        _keywords.Add("Zoom Two", () =>
         {
             activeFloor = 2;
             AnimationController.activeFloor = 2;
@@ -63,7 +41,7 @@ public class SpeechManager : MonoBehaviour
             floor2.transform.DOScale(new Vector3(20, 20, 20), 2);
         });
 
-        _keywords.Add("Zoom In One", () =>
+        _keywords.Add("Zoom One", () =>
         {
             activeFloor = 1;
             AnimationController.activeFloor = 1;
@@ -86,7 +64,7 @@ public class SpeechManager : MonoBehaviour
         //    floor2.transform.DOMove(new Vector3(1.5f, F2Initial.y, 1.5f), 2);
         //});
 
-        _keywords.Add("Turn Left", () =>
+        _keywords.Add("Turn", () =>
         {
             activeFloor = 0;
             AnimationController.activeFloor = 0;
