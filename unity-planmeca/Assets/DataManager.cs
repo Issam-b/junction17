@@ -12,25 +12,36 @@ public class DataManager : MonoBehaviour {
 	// Use this for initialization
 	bool up = true; 
 	void Start () {
-		///PainImg.transform.localScale = new Vector2 (0, 1);
-		//StressImg.transform.localScale = new Vector2 (0, 1);
+        ///PainImg.transform.localScale = new Vector2 (0, 1);
+        //StressImg.transform.localScale = new Vector2 (0, 1);
+        InvokeRepeating("updateHappines", 1.0f, 0.3f);
+    }
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (up) {
-			PainCurrent += Time.deltaTime * 11;
-			if (PainCurrent >= 100)
-				up = false;
-		} else {
-			PainCurrent -= Time.deltaTime * 11;
-			if (PainCurrent <= 0)
-				up = true;
-		
-		}
+    private void updateHappines()
+    {
+        if (up)
+        {
+            //PainCurrent += Time.deltaTime * 0.01F;
+            PainCurrent += Random.Range(0, 4);
 
-		/*if (Input.GetKeyDown(KeyCode.KeypadPlus)) {
+            if (PainCurrent >= 100)
+                up = false;
+        }
+        else
+        {
+            //PainCurrent -= Time.deltaTime * 0.01F;
+            PainCurrent -= Random.Range(0, 4);
+            if (PainCurrent <= 0)
+                up = true;
+
+        }
+    }
+    // Update is called once per frame
+    void Update () {
+
+        //PainCurrent = 17;
+
+        /*if (Input.GetKeyDown(KeyCode.KeypadPlus)) {
 			PainCurrent +=  5;
 			StressCurrent +=  3;
 		}
@@ -39,7 +50,7 @@ public class DataManager : MonoBehaviour {
 			PainCurrent -= PainCurrent + 2;
 			StressCurrent -= PainCurrent - 3;
 		}*/
-		PainCurrent = Mathf.Clamp (PainCurrent, 0, 100);
+        PainCurrent = Mathf.Clamp (PainCurrent, 0, 100);
 		StressCurrent = Mathf.Clamp (StressCurrent, 0, 100);
 
 		PainPerecent = PainCurrent / PainMax;
